@@ -1,68 +1,64 @@
-<!DOCTYPE html>
-<html lang="so">
-<head>
-  <meta charset="UTF-8">
-  <title>Student Marks Report</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f9f9;
+}
 
-  <h2>Student Marks Report</h2>
+h2 {
+  color: #333;
+  margin-top: 20px;
+}
 
-  <table>
-    <tr>
-      <th>ID</th>
-      <th>Name</th>
-      <th>Math</th>
-      <th>English</th>
-      <th>Science</th>
-      <th>Button</th>
-    </tr>
-    <tr>
-      <td>C1240001</td>
-      <td>Ahmed Ali</td>
-      <td>85</td>
-      <td>90</td>
-      <td>78</td>
-      <td>
-        <button class="btn btn-edit">Edit</button>
-        <button class="btn btn-delete">Delete</button>
-      </td>
-    </tr>
-    <tr>
-      <td>C1240002</td>
-      <td>Layla Noor</td>
-      <td>92</td>
-      <td>88</td>
-      <td>95</td>
-      <td>
-        <button class="btn btn-edit">Edit</button>
-        <button class="btn btn-delete">Delete</button>
-      </td>
-    </tr>
-    <tr>
-      <td>C1240003</td>
-      <td>Sami Yusuf</td>
-      <td>76</td>
-      <td>81</td>
-      <td>89</td>
-      <td>
-        <button class="btn btn-edit">Edit</button>
-        <button class="btn btn-delete">Delete</button>
-      </td>
-    </tr>
-    <tr>
-      <td>C12400043</td>
-      <td>ahmed Yusuf</td>
-      <td>76</td>
-      <td>81</td>
-      <td>89</td>
-      <td>
-        <button class="btn btn-edit">Edit</button>
-        <button class="btn btn-delete">Delete</button>
-      </td>
-    </tr>
-  </table>
+table {
+  width: 85%;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
 
-</body>
-</html>
+th {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+  color: #333;
+}
+
+tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+.btn {
+  padding: 6px 15px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.btn-edit {
+  background-color: #28a745;
+  margin-right: 45px;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+}
+tr:hover {
+    background-color: #d1ecf1; !important
+    cursor: pointer;
+}
+th:hover {
+    background-color: #0056b3;
+}
